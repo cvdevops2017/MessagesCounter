@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>DevOps Training 2017 - Docker Exercise 2</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Messages Counter</h1>
+            </div>
+	    <img style="float: right;" src="https://media.licdn.com/media-proxy/ext?w=800&amp;h=800&amp;hash=u2NSEb1FmfXejHv9%2FD8iFpyRxkA%3D&amp;ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6pnBYfxwhs5buW4E6g9AlUFszdD2HrBHv7vZaeMyi0ZsTWeq2grVkUK31Uxlc2fuesQTS0GpW_Loy8KI1x3ZLld5WwN1UHahk1h2oc" alt="Image result for codevalue.net logo" width="175" height="95" />
+            <div id="content">
+                <form method="post" action="{{ url_for('chat') }}">
+		  <label> Web Container:  <strong>{{hostname}}</strong> </label>
+                  <label> Last Message:  <strong>{{messages}}</strong> </label>
+                  <label for="message">Please enter a message:</label>
+                  <input type="text" name="message" /><br />
+                  <input type="submit" />
+                </form>
+            </div>
+    </body>
+</html>
+ 
